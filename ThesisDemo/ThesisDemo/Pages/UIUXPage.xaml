@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ThesisDemo.Pages.UIUXPage"
+    Title="UI and UX">
+	<ContentPage.Content>
+        <StackLayout
+            Margin = "16, 16, 16, 16"
+            >
+            <Entry
+                Placeholder="Username"
+                HeightRequest = "40"
+            />
+            <Entry
+                Placeholder = "Password"
+                IsPassword = "true"
+                HeightRequest = "40"
+            />
+            <Button
+                HorizontalOptions= "Center"
+                Text = "Log in"
+                HeightRequest = "44"
+                Clicked = "Handle_Clicked"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
