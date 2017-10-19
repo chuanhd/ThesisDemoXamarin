@@ -39,6 +39,12 @@
     <EmbeddedResource Include="Pages\UIUXPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AnimationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\UIUXSecondPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -56,6 +62,12 @@
     </Compile>
     <Compile Include="Pages\UIUXPage.xaml.cs">
       <DependentUpon>UIUXPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AnimationPage.xaml.cs">
+      <DependentUpon>AnimationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UIUXSecondPage.xaml.cs">
+      <DependentUpon>UIUXSecondPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

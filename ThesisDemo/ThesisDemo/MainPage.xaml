@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:local="clr-namespace:ThesisDemo;assembly=ThesisDemo"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ThesisDemo.MainPage">
+    x:Class="ThesisDemo.MainPage"
+    Title="ThesisDemo">
     <ContentPage.Padding>
         8, 8, 8, 8
     </ContentPage.Padding>

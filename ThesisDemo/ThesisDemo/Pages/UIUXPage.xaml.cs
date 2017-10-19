@@ -12,9 +12,9 @@ namespace ThesisDemo.Pages
             InitializeComponent();
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
+        async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            DisplayAlert("Button clicked", "Login button pressed", "Ok");
+            await Navigation.PushAsync(new UIUXSecondPage(), true);
         }
     }
 }

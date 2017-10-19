@@ -27,8 +27,30 @@ namespace ThesisDemo
             ((ListView)sender).SelectedItem = null;
 
             var _selectedItem = e.SelectedItem.ToString();
-            if (_selectedItem == "Layout") {
-                await Navigation.PushAsync(new Pages.LayoutPage());
+            var _selectedIndex = m_Items.IndexOf(_selectedItem);
+            switch (_selectedIndex) {
+                case 0:
+                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
+                    break;
+
+                case 1:
+                    await Navigation.PushAsync(new Pages.LayoutPage(), false);
+                    break;
+
+                case 2:
+                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
+                    break;
+
+                case 3:
+                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
+                    break;
+
+                case 4:
+                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
+                    break;
+
+                default:
+                    break;
             }
 
 
