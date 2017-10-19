@@ -38,7 +38,7 @@ namespace ThesisDemo
                     break;
 
                 case 2:
-                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
+                    await Navigation.PushAsync(new Pages.AnimationPage(), false);
                     break;
 
                 case 3:
