@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using Xamvvm;
 
 namespace ThesisDemo
 {
@@ -7,6 +8,21 @@ namespace ThesisDemo
         public App()
         {
             InitializeComponent();
+
+            var factory = new XamvvmFormsFactory(this);
+            XamvvmCore.SetCurrentFactory(factory);
+            /*
+            App.Current.Resources = new ResourceDictionary()
+            {
+                { "CustomCacheKeyFactory", new CustomCacheKeyFactory() }
+            };
+
+            // Xamvvm init
+            var factory = new XamvvmFormsFactory(this);
+            factory.RegisterNavigationPage<MenuNavigationPageModel>(() => this.GetPageFromCache<MenuPageModel>());
+            XamvvmCore.SetCurrentFactory(factory);
+            MainPage = this.GetPageFromCache<MenuNavigationPageModel>() as Page;
+            */
 
             MainPage = new NavigationPage(new MainPage());
         }

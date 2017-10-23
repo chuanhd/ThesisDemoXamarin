@@ -49,6 +49,14 @@ namespace ThesisDemo
                     await Navigation.PushAsync(new Pages.UIUXPage(), false);
                     break;
 
+                case 5:
+                    await Navigation.PushAsync(new Pages.MultiTasking.ListPage(), false);
+                    break;
+
+                case 6:
+                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
+                    break;
+
                 default:
                     break;
             }

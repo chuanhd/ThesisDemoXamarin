@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
+
+using FFImageLoading.Forms.Touch;
 
 namespace ThesisDemo.iOS
 {
@@ -18,6 +16,8 @@ namespace ThesisDemo.iOS
 #if DEBUG
 			Xamarin.Calabash.Start();
 #endif
+
+            CachedImageRenderer.Init();
 
             LoadApplication(new App());
 
