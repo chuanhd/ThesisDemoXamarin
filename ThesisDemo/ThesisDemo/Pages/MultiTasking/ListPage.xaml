@@ -9,8 +9,10 @@
 		Title="List">
 	<ContentPage.Content>
 
-		<ListView CachingStrategy="RecycleElement" HasUnevenRows="false"
-				RowHeight="180" SelectedItem="{Binding SelectedItem, Mode=TwoWay}" ItemsSource="{Binding Items}">
+		<ListView 
+            x:Name = "ImagesListView"
+            CachingStrategy="RecycleElement" HasUnevenRows="false"
+				RowHeight="180" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
 
 			<ListView.Behaviors>
 				<xamvvm:BaseEventToCommandBehavior EventName="ItemSelected" Command="{Binding ItemSelectedCommand}"/>
