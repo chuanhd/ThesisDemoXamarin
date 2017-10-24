@@ -18,7 +18,7 @@ namespace ThesisDemo.iOS
 #endif
 
             CachedImageRenderer.Init();
-
+            Xamarin.FormsGoogleMaps.Init(Constants.GOOGLE_MAPS_IOS_API_KEY);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

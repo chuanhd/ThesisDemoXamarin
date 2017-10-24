@@ -29,31 +29,31 @@ namespace ThesisDemo
             var _selectedItem = e.SelectedItem.ToString();
             var _selectedIndex = m_Items.IndexOf(_selectedItem);
             switch (_selectedIndex) {
-                case 0:
+                case 0: // UI and UX
                     await Navigation.PushAsync(new Pages.UIUXPage(), false);
                     break;
 
-                case 1:
+                case 1: // Layout
                     await Navigation.PushAsync(new Pages.LayoutPage(), false);
                     break;
 
-                case 2:
+                case 2: // Animation
                     await Navigation.PushAsync(new Pages.AnimationPage(), false);
                     break;
 
-                case 3:
+                case 3: // Web Services
                     await Navigation.PushAsync(new Pages.UIUXPage(), false);
                     break;
 
-                case 4:
-                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
+                case 4: // Third party and services
+                    await Navigation.PushAsync(new Pages.BasicMapPage(), false);
                     break;
 
-                case 5:
+                case 5: // Multithreading
                     await Navigation.PushAsync(new Pages.MultiTasking.ListPage(), false);
                     break;
 
-                case 6:
+                case 6: // Testing
                     await Navigation.PushAsync(new Pages.UIUXPage(), false);
                     break;
 
