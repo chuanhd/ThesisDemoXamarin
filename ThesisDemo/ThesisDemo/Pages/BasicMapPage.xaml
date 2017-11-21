@@ -9,8 +9,8 @@
             HorizontalOptions="Fill"
             VerticalOptions="Fill">
             <Grid.RowDefinitions>
-                <RowDefinition Height="4*" />
-                <RowDefinition Height="6*" />
+                <RowDefinition Height="0" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <ScrollView Grid.Row="0"
@@ -212,7 +212,7 @@
               Tilt = 60
             -->
             <maps:Map Grid.Row="1" x:Name="map"
-                      InitialCameraUpdate="-23.68, -46.87, 13, 30, 60"
+                      InitialCameraUpdate="21.0398407, 105.784294, 13, 30, 60"
                       VerticalOptions="FillAndExpand" />
         </Grid>
 	</ContentPage.Content>
