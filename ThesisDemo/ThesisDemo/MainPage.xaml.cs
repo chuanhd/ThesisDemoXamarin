@@ -10,7 +10,7 @@ namespace ThesisDemo
     public partial class MainPage : ContentPage
     {
 
-        public static IList<string> m_Items = new List<string> { "UI and UX", "Layout", "Animation", "Web Services", "Third party and services", "Multithreading and background thread", "Testing" };
+        public static IList<string> m_Items = new List<string> { "UI and UX", "Layout", "Animation", "Web Services", "Third party and services", "Multithreading and background thread"};
 
         public MainPage()
         {
@@ -51,10 +51,6 @@ namespace ThesisDemo
 
                 case 5: // Multithreading
                     await Navigation.PushAsync(new Pages.MultiTasking.ListPage(), false);
-                    break;
-
-                case 6: // Testing
-                    await Navigation.PushAsync(new Pages.UIUXPage(), false);
                     break;
 
                 default:

@@ -6,21 +6,26 @@
         xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
 
 
-    <Grid Padding="10">
+        <ffimageloading:CachedImage x:Name="Image" HorizontalOptions="Center" VerticalOptions="Center"
+            LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
+            Aspect="AspectFill" HeightRequest="400" WidthRequest="400">
+        </ffimageloading:CachedImage>
+    
+    <!--<Grid Padding="10">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="400" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <ffimageloading:CachedImage x:Name="Image" HorizontalOptions="Center" VerticalOptions="Center"
             LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
-            Aspect="AspectFill" HeightRequest="150" WidthRequest="150">
+            Aspect="AspectFill" HeightRequest="400" WidthRequest="400">
         </ffimageloading:CachedImage>
 
         <Label x:Name="Label" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-    </Grid>
+    </Grid>-->
 </ViewCell>

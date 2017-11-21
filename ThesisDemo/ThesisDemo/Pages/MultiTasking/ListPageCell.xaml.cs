@@ -20,7 +20,7 @@ namespace ThesisDemo.Pages.MultiTasking
 				return;
 
 			Image.Source = item.ImageUrl;
-			Label.Text = item.FileName;
+			//Label.Text = item.FileName;
 		}
 	}
 }
